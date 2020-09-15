@@ -13,6 +13,8 @@ body {
 h2 {
     /* color: Couleur du texte */
     color: red;
+    font-size: 2rem;
+    margin: .5em 0;
 }
 
 /* Ce sélecteur sélectionne un id (préfixe #) */
@@ -38,3 +40,9 @@ h2 {
     */
     box-sizing: border-box;
 }
+
+/* Guide des unitées de taille
+- px = pixel
+- rem = proportion de la taille de base définie par l'appareil
+- em = comme rem, mais basé sur la taille courante (taille de l'élément actuel, ou à défaut de son parent)
+*/
