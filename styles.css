@@ -1,7 +1,40 @@
 body {
+    /* font-family: Modifie la fonte utilisée pour afficher le texte
+        - Les lettres des fontes "serif" ont des "pattes" et sont plus élégantes
+        - Les lettres des fontes "sans-serif" n'ont pas de pattes et sont plus lisibles, notamment en petit
+        - Les lettres des fontes "monospace" font toutes la même largeur, ce qui est plus pratique pour relire du code, par exemple
+    */
     font-family: Arial, Helvetica, sans-serif;
+    /* background-color: Couleur de fond */
+    background-color: blueviolet;
 }
 
-h1 {
+/* Ce sélecteur sélectionne une balise (pas de préfixe) */
+h2 {
+    /* color: Couleur du texte */
     color: red;
+}
+
+/* Ce sélecteur sélectionne un id (préfixe #) */
+#container {
+    background-color: white;
+    /* width: Largeur, fixe la taille horizontale du cadre de façon stricte */
+    /* max-width: Largeur maximale, donne une limite à la taille horizontale du cadre */
+    max-width: 800px;
+    /* margin: Marge (espace entre le bord du cadre et les autres éléments
+        1 valeur: définit les 4 marges à la fois
+        2 valeurs: marge verticale, marge horizontale
+        3 valeurs: marge en haut, marge horizontale, marge en bas
+        4 valeurs: marge en haut, marge à droite, marge à gauche, marge en bas
+    */
+    margin: 0 auto;
+    /* padding: "Rembourrage" (espace entre le bord du cadre et son contenu)
+        Avec plusieurs valeurs, les règles sont les mêmes que pour margin
+    */
+    padding: 2rem;
+    /* box-sizing: Manière de calculer la taille du cadre
+        content-box (par défaut): Applique la taille du cadre au contenu, et rajoute le padding autour
+        border-box: Applique la taille du cadre d'un bord à l'autre, et le padding vient rogner à l'intérieur
+    */
+    box-sizing: border-box;
 }
